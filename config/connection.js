@@ -7,7 +7,7 @@ var connectioninfo = {
   user: "root",
   password: "",
   database: "burgers_db"
-}
+};
 
 var connection = mysql.createConnection(connectioninfo);
 
