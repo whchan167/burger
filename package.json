@@ -13,9 +13,6 @@
   },
   "author": "wen",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/whchan167/burger/issues"
-  },
   "homepage": "https://github.com/whchan167/burger#readme",
   "dependencies": {
     "body-parser": "^1.16.0",
@@ -24,4 +21,5 @@
     "method-override": "^2.3.7",
     "mysql": "^2.13.0"
   }
+  
 }
