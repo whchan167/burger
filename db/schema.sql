@@ -5,7 +5,7 @@ USE burgers_db;
 CREATE TABLE burgers (
 id integer(11) AUTO_INCREMENT NOT NULL,
 burger_name VARCHAR(255),
-devoured TINYINT(1) default 0,
+devoured BOOLEAN default false,
 date timestamp default CURRENT_TIMESTAMP on update  CURRENT_TIMESTAMP,
 PRIMARY KEY(id)
 ); 

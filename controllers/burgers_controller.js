@@ -11,13 +11,13 @@ router.get("/", function(req, res) {
     var hbsObject = {
       burgers: data
     };
-    console.log(hbsObject);
     res.render("index", hbsObject);
   });
 });
 
 router.post("/", function(req, res) {
-  burger.insertOne(req.body.devoured, req.body.burger_name
+  console.log(req.body)
+  burger.insertOne("burger_name", req.body.burger_name
   , function() {
     
   res.redirect("/");
@@ -27,8 +27,8 @@ router.post("/", function(req, res) {
 
 router.put("/:id", function(req, res) {
   var burgerid = "id = " + req.params.id;
-
-  burger.updateOne(req.body.devoured, burgerid, function() {
+  
+  burger.updateOne("devoured", burgerid, function() {
     
   res.redirect("/");
   });

@@ -9,17 +9,17 @@ var burger = {
   },
 
   // 
-  insertOne: function(col, burger_name, cb) {
-    orm.insertOne("burgers", col, burger_name, function(res) {
+  insertOne: function(col_name, burger_name, cb) {
+    orm.insertOne("burgers", col_name, burger_name, function(res) {
       cb(res);
     });
   },
-  updateOne: function(col, burger_id, cb) {
-    orm.updateOne("burgers", col, burger_id, function(res) {
+  updateOne: function(col_devoured, burger_id, cb) {
+    orm.updateOne("burgers", col_devoured, burger_id, function(res) {
       cb(res);
     });
   }
 };
 
-// Export the database functions for the controller (catsController.js).
+// Export the database functions for the controller (burgerController.js).
 module.exports = burger;
